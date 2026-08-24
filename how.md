@@ -1,9 +1,9 @@
-sf# Boutique Landing Page
+# Boutique Landing Page
 
 ## Description
 
 Page vitrine centrale ("boutique") qui présente les 6 autres landing pages comme des produits. Chaque carte produit dispose de deux actions :
-- **Voir la page** — lien relatif vers la landing page dédiée.
+- **Voir la page** — URL Cloudflare vers la landing page dédiée.
 - **Acheter** — lien direct vers le checkout MyMaketou correspondant.
 
 ## Structure
@@ -30,14 +30,14 @@ boutique-landing-page/
 
 ## Produits & liens
 
-| Produit | Landing | Prix | Checkout MyMaketou |
+| Produit | Landing (URL Cloudflare) | Prix | Checkout MyMaketou |
 |---|---|---|---|
-| Pack Baltazar | `../balta-landing-page/index.html` | 5 500 FCFA | `baltazar.mymaketou.shop/products/veux-tu-1385-video-289-photo-260-bd-video-baltazar-et-du-petit-baltazar-inclu/checkout` |
-| Influenceuse Ivoirienne | `../pastor-landing-page/index.html` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-a-des-videos-dune-influenceuse-ivoirienne-7/checkout` |
-| Pack KERA | `../kera-landing-page/index.html` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout` |
-| Pack +14 838 BD | `../bd-landing-page/index.html` | 13 000 FCFA | `baltazar.mymaketou.shop/products/veut-tu-14838-pdf-bd-hentai-pour-homme-mature-/checkout` |
-| 369 Secrets | `../369-secrets-landing-page/index.html` | 19 000 FCFA | `mr-livre.mymaketou.shop/products/offre-speciale-pdfaudio/checkout` |
-| Guide Télégram | `../gotelegram-landing-page/index.html` | 5 500 FCFA | `baltazar.mymaketou.shop/en/products/comment-cree-ou-recuperer-son-compte-telegram-facilement-depuis-chez-vous/checkout` |
+| Pack Baltazar | `https://balta.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/veux-tu-1385-video-289-photo-260-bd-video-baltazar-et-du-petit-baltazar-inclu/checkout` |
+| Influenceuse Ivoirienne | `https://pastor.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-a-des-videos-dune-influenceuse-ivoirienne-7/checkout` |
+| Pack KERA | `https://kera.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout` |
+| Pack +14 838 BD | `https://bd.famatchai226.workers.dev/` | 13 000 FCFA | `baltazar.mymaketou.shop/products/veut-tu-14838-pdf-bd-hentai-pour-homme-mature-/checkout` |
+| 369 Secrets | `https://369-secrets.famatchai226.workers.dev/` | 19 000 FCFA | `mr-livre.mymaketou.shop/products/offre-speciale-pdfaudio/checkout` |
+| Guide Télégram | `https://gotelegram.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/en/products/comment-cree-ou-recuperer-son-compte-telegram-facilement-depuis-chez-vous/checkout` |
 
 ## How to use
 
