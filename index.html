@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutique Exclusive — Collections & Guides Premium | Accès Privé & Discret</title>
+  <meta name="description"
+    content="Découvrez notre boutique exclusive : vidéos privées, packs de BD adultes, livres numériques et guides. Paiement sécurisé, accès instantané et 100% discret." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    /* ===================== DESIGN TOKENS ===================== */
+    :root {
+      --primary: #7c3aed;
+      --primary-container: #9d5cff;
+      --on-primary: #ffffff;
+      --secondary: #c2410c;
+      --secondary-container: #fdba74;
+      --on-secondary-fixed: #2a0f00;
+      --surface: #faf9fb;
+      --surface-dim: #e4e0e9;
+      --surface-container-low: #f4f1f8;
+      --surface-container: #efebf5;
+      --surface-container-high: #e9e5f0;
+      --surface-container-highest: #e3dfea;
+      --surface-container-lowest: #ffffff;
+      --on-surface: #1b1722;
+      --on-surface-variant: #5e5568;
+      --outline-variant: #d4cde0;
+      --secondary-fixed-dim: #f59e0b;
+
+      --font-headline: 'Manrope', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      --radius-md: 0.625rem;
+      --radius-lg: 1.25rem;
+      --radius-full: 9999px;
+      --spacing-4: 1rem;
+      --spacing-6: 1.5rem;
+      --spacing-8: 2rem;
+      --spacing-12: 3rem;
+      --spacing-20: 5rem;
+      --spacing-24: 6rem;
+    }
+
+    /* ===================== RESET & BASE ===================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--surface);
+      color: var(--on-surface);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(1120px, 100% - 2rem);
+      margin-inline: auto;
+    }
+
+    section {
+      padding: var(--spacing-12) 0;
+    }
+
+    /* ===================== TYPOGRAPHY ===================== */
+    .display-lg {
+      font-family: var(--font-headline);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .display-sm {
+      font-family: var(--font-headline);
+      font-size: clamp(1.5rem, 3.2vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .title-lg {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .title-sm {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .label-upper {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .body-md {
+      font-size: 1rem;
+      color: var(--on-surface-variant);
+      line-height: 1.7;
+    }
+
+    em {
+      font-style: normal;
+      color: var(--primary);
+    }
+
+    /* ===================== BUTTONS ===================== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: var(--on-primary);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.85rem 1.75rem;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      box-shadow: 0 4px 14px rgba(124, 58, 237, 0.28);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-container);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(124, 58, 237, 0.36);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: var(--primary);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.85rem 1.75rem;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-container);
+      color: var(--on-primary);
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #ffffff;
+      color: var(--primary);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.9rem 2rem;
+      border-radius: var(--radius-md);
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+    }
+
+    /* ===================== NAVBAR ===================== */
+    header.navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(250, 249, 251, 0.88);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--outline-variant);
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+    }
+
+    .nav-logo {
+      font-family: var(--font-headline);
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--on-surface);
+    }
+
+    .nav-logo span {
+      color: var(--primary);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .lang-toggle {
+      background: var(--surface-container);
+      color: var(--on-surface);
+      border: 1px solid var(--outline-variant);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.5rem 0.9rem;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    .nav-cta {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.25rem;
+    }
+
+    .hide-mobile {
+      display: inline;
+    }
+
+    /* ===================== HERO ===================== */
+    .hero {
+      background:
+        radial-gradient(circle at 15% 20%, rgba(124, 58, 237, 0.14), transparent 42%),
+        radial-gradient(circle at 85% 80%, rgba(194, 65, 12, 0.12), transparent 42%),
+        var(--surface);
+      text-align: center;
+      padding-top: var(--spacing-20);
+      padding-bottom: var(--spacing-20);
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: var(--surface-container-low);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.5rem 1.1rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--outline-variant);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero .display-lg {
+      max-width: 800px;
+      margin: 0 auto 1.25rem;
+    }
+
+    .hero .body-md {
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.25rem 2.5rem;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--on-surface-variant);
+    }
+
+    .trust-item svg {
+      flex-shrink: 0;
+      color: var(--primary);
+    }
+
+    /* ===================== CATALOG ===================== */
+    .catalog-head {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 3rem;
+    }
+
+    .catalog-head .display-sm {
+      margin: 0.75rem 0 1rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: var(--surface-container-lowest);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(27, 23, 34, 0.12);
+    }
+
+    .product-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      background: var(--surface-container);
+    }
+
+    .product-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 0.9rem;
+      left: 0.9rem;
+      background: var(--secondary-container);
+      color: var(--on-secondary-fixed);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .product-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 1.35rem 1.25rem 1.5rem;
+    }
+
+    .product-name {
+      font-family: var(--font-headline);
+      font-size: 1.12rem;
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 0.6rem;
+    }
+
+    .product-desc {
+      font-size: 0.92rem;
+      color: var(--on-surface-variant);
+      line-height: 1.6;
+      flex: 1;
+      margin-bottom: 1.25rem;
+    }
+
+    .product-price {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    .price-old {
+      font-size: 0.9rem;
+      color: var(--on-surface-variant);
+      text-decoration: line-through;
+    }
+
+    .price-now {
+      font-family: var(--font-headline);
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .product-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .product-actions .btn-outline,
+    .product-actions .btn-primary {
+      justify-content: center;
+      width: 100%;
+      font-size: 0.95rem;
+      padding: 0.75rem 1rem;
+    }
+
+    /* ===================== HOW IT WORKS ===================== */
+    .how {
+      background: var(--surface-container-low);
+    }
+
+    .how-head {
+      text-align: center;
+      margin: 0 auto 3rem;
+      max-width: 560px;
+    }
+
+    .how-head .display-sm {
+      margin: 0.75rem 0 0;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .step-card {
+      background: var(--surface-container-lowest);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 3.25rem;
+      height: 3.25rem;
+      border-radius: var(--radius-full);
+      background: var(--primary);
+      color: var(--on-primary);
+      font-family: var(--font-headline);
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+    }
+
+    .step-card .title-sm {
+      margin-bottom: 0.6rem;
+    }
+
+    .step-card .body-md {
+      font-size: 0.95rem;
+    }
+
+    /* ===================== PAYMENT ===================== */
+    .payment {
+      text-align: center;
+    }
+
+    .payment-head {
+      max-width: 560px;
+      margin: 0 auto 2rem;
+    }
+
+    .payment-head .display-sm {
+      margin: 0.75rem 0 1rem;
+    }
+
+    .payment-card {
+      background: var(--surface-container-lowest);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .payment-card img {
+      margin: 0 auto 1.5rem;
+      border-radius: var(--radius-md);
+    }
+
+    /* ===================== FAQ ===================== */
+    .faq-head {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .faq-head .display-sm {
+      margin: 0.75rem 0 0;
+    }
+
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .faq-item {
+      background: var(--surface-container-lowest);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--on-surface);
+      padding: 1.25rem 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .faq-question .icon {
+      flex-shrink: 0;
+      font-size: 1.5rem;
+      color: var(--primary);
+      line-height: 1;
+      transition: transform 0.25s ease;
+    }
+
+    .faq-item.open .faq-question .icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 1.5rem 1.25rem;
+      color: var(--on-surface-variant);
+      line-height: 1.7;
+    }
+
+    /* ===================== CTA SECTION ===================== */
+    .cta-final {
+      background:
+        linear-gradient(135deg, var(--primary) 0%, #5b21b6 100%);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .cta-final .label-upper {
+      color: #e9d5ff;
+    }
+
+    .cta-final .display-sm {
+      margin: 0.75rem 0 1rem;
+      color: #ffffff;
+    }
+
+    .cta-final .subtitle {
+      color: #e9d5ff;
+      margin-bottom: 2rem;
+    }
+
+    /* ===================== FOOTER ===================== */
+    footer {
+      background: var(--on-surface);
+      color: #d7d3dd;
+      padding: 2.5rem 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    footer .contact {
+      margin-bottom: 0.75rem;
+      color: #ffffff;
+    }
+
+    footer a {
+      color: #c4b5fd;
+      font-weight: 600;
+    }
+
+    /* ===================== FLOAT BAR ===================== */
+    .float-bar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 60;
+      background: var(--on-surface);
+      color: #ffffff;
+      padding: 0.8rem 1rem;
+      box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      transform: translateY(100%);
+      transition: transform 0.35s ease;
+    }
+
+    .float-bar.visible {
+      transform: translateY(0);
+    }
+
+    .float-bar .text {
+      font-size: 0.95rem;
+    }
+
+    .float-bar .btn-primary {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.25rem;
+      background: var(--secondary-container);
+      color: var(--on-secondary-fixed);
+      box-shadow: none;
+    }
+
+    .float-bar .btn-primary:hover {
+      background: var(--secondary-fixed-dim);
+    }
+
+    /* ===================== ANIMATIONS ===================== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-up-d1 { transition-delay: 0.1s; }
+    .fade-up-d2 { transition-delay: 0.2s; }
+    .fade-up-d3 { transition-delay: 0.3s; }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 900px) {
+      .products-grid,
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .products-grid,
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hide-mobile {
+        display: none;
+      }
+
+      section {
+        padding: var(--spacing-8) 0;
+      }
+
+      .hero {
+        padding-top: var(--spacing-12);
+        padding-bottom: var(--spacing-12);
+      }
+
+      .nav-cta {
+        padding: 0.55rem 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#top" class="nav-logo" data-i18n-html="nav.logo">Boutique <span>Exclusive</span></a>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" onclick="switchLang(this.getAttribute('data-lang'))"
+          data-lang="en" title="Switch language">EN</button>
+        <a href="#catalogue" class="btn-primary nav-cta" data-i18n="nav.cta">🔥 Voir les offres</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-badge fade-up visible" data-i18n="hero.badge">🔥 Catalogue Officiel — Produits Premium</span>
+        <h1 class="display-lg fade-up fade-up-d1 visible" data-i18n-html="hero.title">
+          Découvrez Nos <em>Collections</em> & <em>Guides</em> Exclusifs
+        </h1>
+        <p class="body-md fade-up fade-up-d2 visible" data-i18n-html="hero.desc">
+          Contenus <strong>privés et discrets</strong> sélectionnés pour vous. Vidéos, BD adultes, livres numériques
+          et guides — le tout livré instantanément après paiement.
+        </p>
+        <div class="hero-actions fade-up fade-up-d3 visible">
+          <a href="#catalogue" class="btn-primary" data-i18n="hero.cta">🛒 Explorer la boutique</a>
+        </div>
+        <div class="trust-row">
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            <span data-i18n="hero.trust_secure">Paiement sécurisé</span>
+          </span>
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+            </svg>
+            <span data-i18n="hero.trust_instant">Accès instantané</span>
+          </span>
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z" />
+            </svg>
+            <span data-i18n="hero.trust_private">100% Discret</span>
+          </span>
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <span data-i18n="hero.trust_members">+2 357 membres</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CATALOG ===================== -->
+    <section id="catalogue">
+      <div class="container">
+        <div class="catalog-head">
+          <span class="label-upper" data-i18n="catalog.label">Nos produits</span>
+          <h2 class="display-sm" data-i18n-html="catalog.title">Choisissez Votre <em>Offre Exclusive</em></h2>
+          <p class="body-md" data-i18n-html="catalog.desc">Cliquez sur <strong>« Voir la page »</strong> pour découvrir les
+            détails complets ou <strong>« Acheter »</strong> pour accéder directement au paiement sécurisé.</p>
+        </div>
+
+        <div class="products-grid">
+
+          <!-- Produit 1 : Baltazar -->
+          <article class="product-card fade-up">
+            <div class="product-media">
+              <img src="./assets/products/baltazar.jpg" alt="Pack Baltazar" loading="lazy" />
+              <span class="product-badge" data-i18n="products.p1_badge">Best-seller 🔥</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="products.p1_name">Pack Baltazar — +2103 Vidéos, 289 Photos & 260 BD</h3>
+              <p class="product-desc" data-i18n="products.p1_desc">La collection complète Baltazar en un seul canal privé. Vidéos HD, photos et BD pour Homme Mature.</p>
+              <div class="product-price">
+                <span class="price-old" data-i18n="products.p1_old_price">23 300 FCFA</span>
+                <span class="price-now" data-i18n="products.p1_price">5 500 FCFA</span>
+              </div>
+              <div class="product-actions">
+                <a href="../balta-landing-page/index.html" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://baltazar.mymaketou.shop/products/veux-tu-1385-video-289-photo-260-bd-video-baltazar-et-du-petit-baltazar-inclu/checkout"
+                  class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 2 : Pastor (Influenceuse Ivoirienne) -->
+          <article class="product-card fade-up fade-up-d1">
+            <div class="product-media">
+              <img src="./assets/products/pastor.png" alt="Vidéos Influenceuse Ivoirienne" loading="lazy" />
+              <span class="product-badge" data-i18n="products.p2_badge">Nouveau 🆕</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="products.p2_name">Vidéos d'une Influenceuse Ivoirienne</h3>
+              <p class="product-desc" data-i18n="products.p2_desc">+300 vidéos exclusives qui font le buzz. Accès privé et discret via Télégram.</p>
+              <div class="product-price">
+                <span class="price-old" data-i18n="products.p2_old_price">23 000 FCFA</span>
+                <span class="price-now" data-i18n="products.p2_price">5 500 FCFA</span>
+              </div>
+              <div class="product-actions">
+                <a href="../pastor-landing-page/index.html" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://baltazar.mymaketou.shop/products/acces-prive-a-des-videos-dune-influenceuse-ivoirienne-7/checkout"
+                  class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 3 : KERA -->
+          <article class="product-card fade-up fade-up-d2">
+            <div class="product-media">
+              <img src="./assets/products/kera.jpg" alt="Pack Influenceuse KERA" loading="lazy" />
+              <span class="product-badge" data-i18n="products.p3_badge">Populaire 🔥</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="products.p3_name">Pack Influenceuse (KERA)</h3>
+              <p class="product-desc" data-i18n="products.p3_desc">Les vidéos privées de l'influenceuse dont tout le monde parle. Accès instantané et discret.</p>
+              <div class="product-price">
+                <span class="price-old" data-i18n="products.p3_old_price">30 000 FCFA</span>
+                <span class="price-now" data-i18n="products.p3_price">5 500 FCFA</span>
+              </div>
+              <div class="product-actions">
+                <a href="../kera-landing-page/index.html" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://baltazar.mymaketou.shop/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout"
+                  class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 4 : BD -->
+          <article class="product-card fade-up">
+            <div class="product-media">
+              <img src="./assets/products/bd.jpg" alt="Pack +14 838 BD Hentaï PDF" loading="lazy" />
+              <span class="product-badge" data-i18n="products.p4_badge">Prix imbattable 💰</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="products.p4_name">Pack +14 838 BD Hentaï PDF</h3>
+              <p class="product-desc" data-i18n="products.p4_desc">Des milliers de bandes dessinées adultes à télécharger immédiatement. La plus grande collection disponible.</p>
+              <div class="product-price">
+                <span class="price-old" data-i18n="products.p4_old_price"></span>
+                <span class="price-now" data-i18n="products.p4_price">13 000 FCFA</span>
+              </div>
+              <div class="product-actions">
+                <a href="../bd-landing-page/index.html" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://baltazar.mymaketou.shop/products/veut-tu-14838-pdf-bd-hentai-pour-homme-mature-/checkout"
+                  class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 5 : 369 Secrets -->
+          <article class="product-card fade-up fade-up-d1">
+            <div class="product-media">
+              <img src="./assets/products/secrets369.jpg" alt="Les 369 Surpuissants Secrets Africains" loading="lazy" />
+              <span class="product-badge" data-i18n="products.p5_badge">-67% 🎁</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="products.p5_name">Les 369 Surpuissants Secrets Africains</h3>
+              <p class="product-desc" data-i18n="products.p5_desc">Livre révélant les savoirs ancestraux africains : prospérité, protection, amour et spiritualité.</p>
+              <div class="product-price">
+                <span class="price-old" data-i18n="products.p5_old_price">58 000 FCFA</span>
+                <span class="price-now" data-i18n="products.p5_price">19 000 FCFA</span>
+              </div>
+              <div class="product-actions">
+                <a href="../369-secrets-landing-page/index.html" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://mr-livre.mymaketou.shop/products/offre-speciale-pdfaudio/checkout"
+                  class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Produit 6 : GoTelegram -->
+          <article class="product-card fade-up fade-up-d2">
+            <div class="product-media">
+              <img src="./assets/products/gotelegram.jpg" alt="Guide Télégram" loading="lazy" />
+              <span class="product-badge" data-i18n="products.p6_badge">Guide 📖</span>
+            </div>
+            <div class="product-body">
+              <h3 class="product-name" data-i18n="products.p6_name">Créer ou Récupérer son Compte Télégram</h3>
+              <p class="product-desc" data-i18n="products.p6_desc">Guide complet étape par étape pour créer ou récupérer ton compte Télégram facilement depuis chez toi.</p>
+              <div class="product-price">
+                <span class="price-old" data-i18n="products.p6_old_price">17 456 FCFA</span>
+                <span class="price-now" data-i18n="products.p6_price">5 500 FCFA</span>
+              </div>
+              <div class="product-actions">
+                <a href="../gotelegram-landing-page/index.html" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://baltazar.mymaketou.shop/en/products/comment-cree-ou-recuperer-son-compte-telegram-facilement-depuis-chez-vous/checkout"
+                  class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="how">
+      <div class="container">
+        <div class="how-head">
+          <span class="label-upper" data-i18n="how.label">Comment ça marche</span>
+          <h2 class="display-sm" data-i18n-html="how.title">Recevez votre accès<br />en 3 étapes simples</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card fade-up">
+            <span class="step-num">1</span>
+            <h3 class="title-sm" data-i18n="how.step1_title">1. Choisissez votre offre</h3>
+            <p class="body-md" data-i18n="how.step1_text">Parcourez notre catalogue et sélectionnez le produit qui vous intéresse.</p>
+          </div>
+          <div class="step-card fade-up fade-up-d1">
+            <span class="step-num">2</span>
+            <h3 class="title-sm" data-i18n="how.step2_title">2. Payez en toute sécurité</h3>
+            <p class="body-md" data-i18n="how.step2_text">Mobile money ou carte bancaire. Vos informations restent privées.</p>
+          </div>
+          <div class="step-card fade-up fade-up-d2">
+            <span class="step-num">3</span>
+            <h3 class="title-sm" data-i18n="how.step3_title">3. Recevez l'accès instantané</h3>
+            <p class="body-md" data-i18n="how.step3_text">Après validation du paiement, vous recevez votre lien ou fichier par email.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PAYMENT ===================== -->
+    <section class="payment">
+      <div class="container">
+        <div class="payment-head">
+          <span class="label-upper" data-i18n="payment.label">Paiements sécurisés</span>
+          <h2 class="display-sm" data-i18n="payment.title">Moyens de paiement acceptés</h2>
+          <p class="body-md" data-i18n="payment.desc">Paiement 100% sécurisé via mobile money (Wave, Orange Money, MTN Momo, Moov Money) ou carte bancaire (Visa et MasterCard).</p>
+        </div>
+        <div class="payment-card fade-up">
+          <img src="./assets/moyens-paiement.png" alt="Moyens de paiement" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq">
+      <div class="container">
+        <div class="faq-head">
+          <span class="label-upper" data-i18n="faq.label">FAQ</span>
+          <h2 class="display-sm" data-i18n="faq.title">Foire aux questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item open">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq.q1">Comment vais-je recevoir mon produit ?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a1">Après votre paiement, vous recevez automatiquement un email contenant le lien d'accès (Télégram) ou le lien de téléchargement selon le produit choisi.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq.q2">Le paiement est-il vraiment sécurisé ?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a2">Oui. Les paiements sont traités via une plateforme sécurisée. Vos informations bancaires sont chiffrées et ne sont jamais partagées.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq.q3">Est-ce vraiment discret ?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a3">Absolument. Vous pouvez même utiliser un pseudonyme lors du paiement. Nous ne cherchons pas à connaître votre identité, seulement à vous livrer le contenu.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq.q4">Quand vais-je recevoir mon accès ?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a4">L'accès est instantané. Dès la confirmation du paiement, vous recevez votre lien par email en quelques secondes.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span data-i18n="faq.q5">Puis-je choisir entre FR et EN ?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.a5">Oui, chaque page produit est disponible en français et en anglais. Utilisez le bouton de langue en haut de la page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA FINAL ===================== -->
+    <section class="cta-final">
+      <div class="container">
+        <span class="label-upper" data-i18n="cta_section.label">🔥 LA PROMO EST DISPONIBLE MAINTENANT</span>
+        <h2 class="display-sm" data-i18n-html="cta_section.title">Prêt à découvrir<br />nos offres exclusives ?</h2>
+        <p class="subtitle" data-i18n="cta_section.subtitle">Accès instantané · Paiement sécurisé · 100% Discret</p>
+        <a href="#catalogue" class="btn-white" data-i18n="cta_section.btn">🛒 Voir toutes les offres</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <p class="contact">
+        <span data-i18n="footer.contact_intro">Un problème ? Contactez-nous :</span>
+        <a href="mailto:baltazarshop@gmail.com">baltazarshop@gmail.com</a>
+      </p>
+      <p data-i18n="footer.copyright">© 2024 Boutique Exclusive. Tous droits réservés. Contenu exclusivement pour adultes.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== FLOAT BAR ===================== -->
+  <div class="float-bar" id="floatBar">
+    <span class="text" data-i18n-html="float_bar.text">🔥 Promo : jusqu'à <strong>-67%</strong> sur nos offres</span>
+    <a href="#catalogue" class="btn-primary" data-i18n="float_bar.btn">J'en profite 🛒</a>
+  </div>
+
+  <script src="./i18n.js"></script>
+  <script>
+    // ===== FAQ accordion =====
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('open');
+
+        // Close all items
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        // Open clicked item if it was closed
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // Initialize first FAQ item open state
+    (function initFaq() {
+      const first = document.querySelector('.faq-item.open');
+      if (first) {
+        const answer = first.querySelector('.faq-answer');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    })();
+
+    // ===== Scroll reveal =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ===== Float bar show after scrolling past hero =====
+    const floatBar = document.getElementById('floatBar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) {
+        floatBar.classList.add('visible');
+      } else {
+        floatBar.classList.remove('visible');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+{
+  "lang": "fr",
+  "meta": {
+    "title": "Boutique Exclusive — Collections & Guides Premium | Accès Privé & Discret",
+    "description": "Découvrez notre boutique exclusive : vidéos privées, packs de BD adultes, livres numériques et guides. Paiement sécurisé, accès instantané et 100% discret."
+  },
+  "nav": {
+    "logo": "Boutique <span>Exclusive</span>",
+    "cta": "🔥 Voir les offres"
+  },
+  "hero": {
+    "badge": "🔥 Catalogue Officiel — Produits Premium",
+    "title": "Découvrez Nos <em>Collections</em> & <em>Guides</em> Exclusifs",
+    "desc": "Contenus <strong>privés et discrets</strong> sélectionnés pour vous. Vidéos, BD adultes, livres numériques et guides — le tout livré instantanément après paiement.",
+    "cta": "🛒 Explorer la boutique",
+    "trust_secure": "Paiement sécurisé",
+    "trust_instant": "Accès instantané",
+    "trust_private": "100% Discret",
+    "trust_members": "+2 357 membres"
+  },
+  "catalog": {
+    "label": "Nos produits",
+    "title": "Choisissez Votre <em>Offre Exclusive</em>",
+    "desc": "Cliquez sur <strong>« Voir la page »</strong> pour découvrir les détails complets ou <strong>« Acheter »</strong> pour accéder directement au paiement sécurisé."
+  },
+  "products": {
+    "p1_badge": "Best-seller 🔥",
+    "p1_name": "Pack Baltazar — +2103 Vidéos, 289 Photos & 260 BD",
+    "p1_desc": "La collection complète Baltazar en un seul canal privé. Vidéos HD, photos et BD pour Homme Mature.",
+    "p1_old_price": "23 300 FCFA",
+    "p1_price": "5 500 FCFA",
+
+    "p2_badge": "Nouveau 🆕",
+    "p2_name": "Vidéos d'une Influenceuse Ivoirienne",
+    "p2_desc": "+300 vidéos exclusives qui font le buzz. Accès privé et discret via Télégram.",
+    "p2_old_price": "23 000 FCFA",
+    "p2_price": "5 500 FCFA",
+
+    "p3_badge": "Populaire 🔥",
+    "p3_name": "Pack Influenceuse (KERA)",
+    "p3_desc": "Les vidéos privées de l'influenceuse dont tout le monde parle. Accès instantané et discret.",
+    "p3_old_price": "30 000 FCFA",
+    "p3_price": "5 500 FCFA",
+
+    "p4_badge": "Prix imbattable 💰",
+    "p4_name": "Pack +14 838 BD Hentaï PDF",
+    "p4_desc": "Des milliers de bandes dessinées adultes à télécharger immédiatement. La plus grande collection disponible.",
+    "p4_old_price": "",
+    "p4_price": "13 000 FCFA",
+
+    "p5_badge": "-67% 🎁",
+    "p5_name": "Les 369 Surpuissants Secrets Africains",
+    "p5_desc": "Livre révélant les savoirs ancestraux africains : prospérité, protection, amour et spiritualité.",
+    "p5_old_price": "58 000 FCFA",
+    "p5_price": "19 000 FCFA",
+
+    "p6_badge": "Guide 📖",
+    "p6_name": "Créer ou Récupérer son Compte Télégram",
+    "p6_desc": "Guide complet étape par étape pour créer ou récupérer ton compte Télégram facilement depuis chez toi.",
+    "p6_old_price": "17 456 FCFA",
+    "p6_price": "5 500 FCFA",
+
+    "view_btn": "👀 Voir la page",
+    "buy_btn": "🛒 Acheter"
+  },
+  "how": {
+    "label": "Comment ça marche",
+    "title": "Recevez votre accès<br />en 3 étapes simples",
+    "step1_title": "1. Choisissez votre offre",
+    "step1_text": "Parcourez notre catalogue et sélectionnez le produit qui vous intéresse.",
+    "step2_title": "2. Payez en toute sécurité",
+    "step2_text": "Mobile money ou carte bancaire. Vos informations restent privées.",
+    "step3_title": "3. Recevez l'accès instantané",
+    "step3_text": "Après validation du paiement, vous recevez votre lien ou fichier par email."
+  },
+  "payment": {
+    "label": "Paiements sécurisés",
+    "title": "Moyens de paiement acceptés",
+    "desc": "Paiement 100% sécurisé via mobile money (Wave, Orange Money, MTN Momo, Moov Money) ou carte bancaire (Visa et MasterCard)."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Foire aux questions",
+    "q1": "Comment vais-je recevoir mon produit ?",
+    "a1": "Après votre paiement, vous recevez automatiquement un email contenant le lien d'accès (Télégram) ou le lien de téléchargement selon le produit choisi.",
+    "q2": "Le paiement est-il vraiment sécurisé ?",
+    "a2": "Oui. Les paiements sont traités via une plateforme sécurisée. Vos informations bancaires sont chiffrées et ne sont jamais partagées.",
+    "q3": "Est-ce vraiment discret ?",
+    "a3": "Absolument. Vous pouvez même utiliser un pseudonyme lors du paiement. Nous ne cherchons pas à connaître votre identité, seulement à vous livrer le contenu.",
+    "q4": "Quand vais-je recevoir mon accès ?",
+    "a4": "L'accès est instantané. Dès la confirmation du paiement, vous recevez votre lien par email en quelques secondes.",
+    "q5": "Puis-je choisir entre FR et EN ?",
+    "a5": "Oui, chaque page produit est disponible en français et en anglais. Utilisez le bouton de langue en haut de la page."
+  },
+  "cta_section": {
+    "label": "🔥 LA PROMO EST DISPONIBLE MAINTENANT",
+    "title": "Prêt à découvrir<br />nos offres exclusives ?",
+    "subtitle": "Accès instantané · Paiement sécurisé · 100% Discret",
+    "btn": "🛒 Voir toutes les offres"
+  },
+  "footer": {
+    "contact_intro": "Un problème ? Contactez-nous :",
+    "copyright": "© 2024 Boutique Exclusive. Tous droits réservés. Contenu exclusivement pour adultes."
+  },
+  "float_bar": {
+    "text": "🔥 Promo : jusqu'à <strong>-67%</strong> sur nos offres",
+    "btn": "J'en profite 🛒"
+  }
+}

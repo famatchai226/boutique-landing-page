@@ -1,0 +1,109 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Exclusive Store — Premium Collections & Guides | Private & Discreet Access",
+    "description": "Discover our exclusive store: private videos, adult comic packs, digital books and guides. Secure payment, instant access and 100% discreet."
+  },
+  "nav": {
+    "logo": "Exclusive <span>Store</span>",
+    "cta": "🔥 View offers"
+  },
+  "hero": {
+    "badge": "🔥 Official Catalog — Premium Products",
+    "title": "Discover Our <em>Exclusive</em> Collections & <em>Guides</em>",
+    "desc": "<strong>Private and discreet</strong> content selected for you. Videos, adult comics, digital books and guides — all delivered instantly after payment.",
+    "cta": "🛒 Explore the store",
+    "trust_secure": "Secure payment",
+    "trust_instant": "Instant access",
+    "trust_private": "100% Discreet",
+    "trust_members": "+2,357 members"
+  },
+  "catalog": {
+    "label": "Our products",
+    "title": "Choose Your <em>Exclusive Offer</em>",
+    "desc": "Click <strong>\"View page\"</strong> to see the full details or <strong>\"Buy\"</strong> to go directly to secure checkout."
+  },
+  "products": {
+    "p1_badge": "Best-seller 🔥",
+    "p1_name": "Baltazar Pack — +2103 Videos, 289 Photos & 260 Comics",
+    "p1_desc": "The complete Baltazar collection in one private channel. HD videos, photos and comics for the Mature Man.",
+    "p1_old_price": "23,300 FCFA",
+    "p1_price": "5,500 FCFA",
+
+    "p2_badge": "New 🆕",
+    "p2_name": "Ivorian Influencer's Videos",
+    "p2_desc": "+300 exclusive trending videos. Private and discreet access via Telegram.",
+    "p2_old_price": "23,000 FCFA",
+    "p2_price": "5,500 FCFA",
+
+    "p3_badge": "Popular 🔥",
+    "p3_name": "Influencer Pack (KERA)",
+    "p3_desc": "The private videos of the influencer everyone is talking about. Instant and discreet access.",
+    "p3_old_price": "30,000 FCFA",
+    "p3_price": "5,500 FCFA",
+
+    "p4_badge": "Unbeatable price 💰",
+    "p4_name": "Pack +14,838 Hentai Comics PDF",
+    "p4_desc": "Thousands of adult comics to download instantly. The largest collection available.",
+    "p4_old_price": "",
+    "p4_price": "13,000 FCFA",
+
+    "p5_badge": "-67% 🎁",
+    "p5_name": "The 369 Super-Powerful African Secrets",
+    "p5_desc": "Book revealing ancestral African wisdom: prosperity, protection, love and spirituality.",
+    "p5_old_price": "58,000 FCFA",
+    "p5_price": "19,000 FCFA",
+
+    "p6_badge": "Guide 📖",
+    "p6_name": "Create or Recover your Telegram Account",
+    "p6_desc": "Step-by-step complete guide to create or recover your Telegram account easily from home.",
+    "p6_old_price": "17,456 FCFA",
+    "p6_price": "5,500 FCFA",
+
+    "view_btn": "👀 View page",
+    "buy_btn": "🛒 Buy"
+  },
+  "how": {
+    "label": "How it works",
+    "title": "Get your access<br />in 3 simple steps",
+    "step1_title": "1. Choose your offer",
+    "step1_text": "Browse our catalog and select the product you are interested in.",
+    "step2_title": "2. Pay securely",
+    "step2_text": "Mobile money or bank card. Your information stays private.",
+    "step3_title": "3. Receive instant access",
+    "step3_text": "After payment confirmation, you receive your link or file by email."
+  },
+  "payment": {
+    "label": "Secure payments",
+    "title": "Accepted payment methods",
+    "desc": "100% secure payment via mobile money (Wave, Orange Money, MTN Momo, Moov Money) or bank card (Visa and MasterCard)."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently asked questions",
+    "q1": "How will I receive my product?",
+    "a1": "After your payment, you automatically receive an email containing the access link (Telegram) or the download link depending on the chosen product.",
+    "q2": "Is the payment really secure?",
+    "a2": "Yes. Payments are processed through a secure platform. Your banking information is encrypted and never shared.",
+    "q3": "Is it really discreet?",
+    "a3": "Absolutely. You can even use a pseudonym at checkout. We don't seek to know your identity, only to deliver the content.",
+    "q4": "When will I receive my access?",
+    "a4": "Access is instant. As soon as payment is confirmed, you receive your link by email within seconds.",
+    "q5": "Can I choose between FR and EN?",
+    "a5": "Yes, each product page is available in French and English. Use the language button at the top of the page."
+  },
+  "cta_section": {
+    "label": "🔥 THE PROMO IS AVAILABLE NOW",
+    "title": "Ready to discover<br />our exclusive offers?",
+    "subtitle": "Instant Access · Secure Payment · 100% Discreet",
+    "btn": "🛒 View all offers"
+  },
+  "footer": {
+    "contact_intro": "Having an issue? Contact us:",
+    "copyright": "© 2024 Exclusive Store. All rights reserved. Adult-only content."
+  },
+  "float_bar": {
+    "text": "🔥 Promo: up to <strong>-67%</strong> on our offers",
+    "btn": "Take advantage 🛒"
+  }
+}
