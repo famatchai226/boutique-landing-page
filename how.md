@@ -45,6 +45,22 @@ boutique-landing-page/
 2. The page auto-detects the browser language (French or English).
 3. Click the language toggle button (FR/EN) to switch manually.
 
+## 18+ Age Gate
+
+Chaque visite affiche une popup demandant si l'utilisateur a **plus de 18 ans** :
+- **Oui** → la popup se ferme et la page devient accessible.
+- **Non** → message « Accès refusé » et la popup reste affichée.
+Le texte est bilingue FR/EN (détection automatique de la langue).
+
+## Git — Mise à jour sur GitHub
+
+1. Ouvrez un terminal dans le dossier : `c:\Users\hp\Antigravity& Stitch\boutique-landing-page`
+2. Préparer les fichiers : `git add .`
+3. Enregistrer les changements : `git commit -m "Mise à jour : boutique"`
+4. Envoyer sur GitHub : `git push origin main`
+
+*Le déploiement (Cloudflare Pages / Workers) se lancera automatiquement après le push.*
+
 ## Customization
 
 - **Text content**: Edit `locales/fr.json` and `locales/en.json`.
@@ -55,8 +71,8 @@ boutique-landing-page/
 ## Sections
 
 1. **Navbar** — Logo + language toggle + CTA button
-2. **Hero** — Headline, description, trust badges
-3. **Catalogue** — Grid of 6 product cards (visual, badge, price, Voir la page / Acheter)
+2. **Hero** — Badge uniquement (titre, description et bouton retirés)
+3. **Catalogue** — Grille de 6 produits + badges de confiance (juste après les produits)
 4. **How it works** — 3 steps
 5. **Payment** — Payment methods image
 6. **FAQ** — Accordion-style questions

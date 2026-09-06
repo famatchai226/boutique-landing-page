@@ -268,8 +268,8 @@
         radial-gradient(circle at 85% 80%, rgba(194, 65, 12, 0.12), transparent 42%),
         var(--surface);
       text-align: center;
-      padding-top: var(--spacing-20);
-      padding-bottom: var(--spacing-20);
+      padding-top: var(--spacing-6);
+      padding-bottom: var(--spacing-6);
     }
 
     .hero-badge {
@@ -738,55 +738,13 @@
     <section class="hero">
       <div class="container">
         <span class="hero-badge fade-up visible" data-i18n="hero.badge">🔥 Catalogue Officiel — Produits Premium</span>
-        <h1 class="display-lg fade-up fade-up-d1 visible" data-i18n-html="hero.title">
-          Découvrez Nos <em>Collections</em> & <em>Guides</em> Exclusifs
-        </h1>
-        <p class="body-md fade-up fade-up-d2 visible" data-i18n-html="hero.desc">
-          Contenus <strong>privés et discrets</strong> sélectionnés pour vous. Vidéos, BD adultes, livres numériques
-          et guides — le tout livré instantanément après paiement.
-        </p>
-        <div class="hero-actions fade-up fade-up-d3 visible">
-          <a href="#catalogue" class="btn-primary" data-i18n="hero.cta">🛒 Explorer la boutique</a>
-        </div>
-        <div class="trust-row">
-          <span class="trust-item">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" />
-            </svg>
-            <span data-i18n="hero.trust_secure">Paiement sécurisé</span>
-          </span>
-          <span class="trust-item">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
-            </svg>
-            <span data-i18n="hero.trust_instant">Accès instantané</span>
-          </span>
-          <span class="trust-item">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z" />
-            </svg>
-            <span data-i18n="hero.trust_private">100% Discret</span>
-          </span>
-          <span class="trust-item">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg>
-            <span data-i18n="hero.trust_members">+2 357 membres</span>
-          </span>
-        </div>
+
       </div>
     </section>
 
     <!-- ===================== CATALOG ===================== -->
     <section id="catalogue">
       <div class="container">
-        <div class="catalog-head">
-          <span class="label-upper" data-i18n="catalog.label">Nos produits</span>
-          <h2 class="display-sm" data-i18n-html="catalog.title">Choisissez Votre <em>Offre Exclusive</em></h2>
-          <p class="body-md" data-i18n-html="catalog.desc">Cliquez sur <strong>« Voir la page »</strong> pour découvrir les
-            détails complets ou <strong>« Acheter »</strong> pour accéder directement au paiement sécurisé.</p>
-        </div>
 
         <div class="products-grid">
 
@@ -916,6 +874,34 @@
             </div>
           </article>
 
+        </div>
+
+        <div class="trust-row" style="margin-top: 2.5rem;">
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0 1 10 0v4" />
+            </svg>
+            <span data-i18n="hero.trust_secure">Paiement sécurisé</span>
+          </span>
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" />
+            </svg>
+            <span data-i18n="hero.trust_instant">Accès instantané</span>
+          </span>
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z" />
+            </svg>
+            <span data-i18n="hero.trust_private">100% Discret</span>
+          </span>
+          <span class="trust-item">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+            <span data-i18n="hero.trust_members">+2 357 membres</span>
+          </span>
         </div>
       </div>
     </section>
@@ -1106,6 +1092,86 @@
       }
     });
   </script>
+
+<!-- ================== 18+ AGE GATE ================== -->
+<style>
+#ageGate{position:fixed;inset:0;z-index:2147483647;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.85);backdrop-filter:blur(6px);padding:20px;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#ageGate[hidden]{display:none}
+.age-gate-card{background:#141414;color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:16px;max-width:440px;width:100%;padding:32px 28px;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.age-gate-badge{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:50%;background:#e11d48;font-weight:800;font-size:20px;margin-bottom:16px}
+.age-gate-card h2{font-size:22px;margin:0 0 10px;line-height:1.3}
+.age-gate-card p{font-size:15px;color:#cbd5e1;margin:0 0 24px;line-height:1.5}
+.age-gate-btns{display:flex;flex-direction:column;gap:10px}
+.age-gate-btn{border:0;cursor:pointer;font-size:16px;font-weight:700;padding:13px 16px;border-radius:10px;transition:transform .1s,opacity .2s,background .2s}
+.age-gate-btn:active{transform:scale(.98)}
+.age-gate-yes{background:#16a34a;color:#fff}
+.age-gate-yes:hover{background:#15803d}
+.age-gate-no{background:transparent;color:#e2e8f0;border:1px solid rgba(255,255,255,.25)}
+.age-gate-no:hover{background:rgba(255,255,255,.08)}
+.age-gate-msg{color:#f87171;font-size:13px;font-weight:600;margin-top:14px;min-height:18px}
+.age-gate-card.shake{animation:ageGateShake .4s}
+@keyframes ageGateShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+</style>
+
+<div id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle">
+  <div class="age-gate-card" id="ageGateCard">
+    <div class="age-gate-badge">18+</div>
+    <h2 id="ageGateTitle">Avez-vous plus de 18 ans ?</h2>
+    <p id="ageGateDesc">Ce site est réservé aux adultes.</p>
+    <div class="age-gate-btns">
+      <button type="button" class="age-gate-btn age-gate-yes" id="ageGateYes">Oui, j'ai plus de 18 ans</button>
+      <button type="button" class="age-gate-btn age-gate-no" id="ageGateNo">Non, je suis mineur</button>
+    </div>
+    <div class="age-gate-msg" id="ageGateMsg" role="status"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  function detectLang(){
+    try{
+      var s=localStorage.getItem('preferred-lang');
+      if(s==='fr'||s==='en')return s;
+      s=localStorage.getItem('369secrets_lang');
+      if(s==='fr'||s==='en')return s;
+    }catch(e){}
+    var langs=(navigator.languages&&navigator.languages.length)?navigator.languages:[navigator.language||'fr'];
+    for(var i=0;i<langs.length;i++){
+      var c=(langs[i]||'').slice(0,2).toLowerCase();
+      if(c==='en')return'en';
+      if(c==='fr')return'fr';
+    }
+    return'fr';
+  }
+  var T={
+    fr:{title:"Avez-vous plus de 18 ans ?",desc:"Ce site est réservé aux adultes.",yes:"Oui, j'ai plus de 18 ans",no:"Non, je suis mineur",denied:"Accès refusé"},
+    en:{title:"Are you over 18 years old?",desc:"This website is for adults only.",yes:"Yes, I am over 18",no:"No, I am under 18",denied:"Access denied"}
+  };
+  var L=T[detectLang()];
+  document.getElementById('ageGateTitle').textContent=L.title;
+  document.getElementById('ageGateDesc').textContent=L.desc;
+  document.getElementById('ageGateYes').textContent=L.yes;
+  document.getElementById('ageGateNo').textContent=L.no;
+
+  var gate=document.getElementById('ageGate');
+  var card=document.getElementById('ageGateCard');
+  var msg=document.getElementById('ageGateMsg');
+  var prevOverflow=document.body.style.overflow;
+  document.body.style.overflow='hidden';
+
+  document.getElementById('ageGateYes').addEventListener('click',function(){
+    gate.setAttribute('hidden','');
+    document.body.style.overflow=prevOverflow;
+  });
+
+  document.getElementById('ageGateNo').addEventListener('click',function(){
+    msg.textContent=L.denied;
+    card.classList.remove('shake');
+    void card.offsetWidth;
+    card.classList.add('shake');
+  });
+})();
+</script>
 
 </body>
 
