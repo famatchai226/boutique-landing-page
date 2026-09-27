@@ -347,7 +347,13 @@
       overflow: hidden;
       display: flex;
       flex-direction: column;
+      cursor: pointer;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .product-card:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 3px;
     }
 
     .product-card:hover {
@@ -749,7 +755,8 @@
         <div class="products-grid">
 
           <!-- Produit 1 : Baltazar -->
-          <article class="product-card fade-up">
+          <article class="product-card fade-up" data-href="https://balta.famatchai226.workers.dev/"
+            role="link" tabindex="0" aria-label="Voir la page Pack Baltazar">
             <div class="product-media">
               <img src="./assets/products/baltazar.jpg" alt="Pack Baltazar" loading="lazy" />
               <span class="product-badge" data-i18n="products.p1_badge">Best-seller 🔥</span>
@@ -770,7 +777,8 @@
           </article>
 
           <!-- Produit 2 : Pastor (Influenceuse Ivoirienne) -->
-          <article class="product-card fade-up fade-up-d1">
+          <article class="product-card fade-up fade-up-d1" data-href="https://pastor.famatchai226.workers.dev/"
+            role="link" tabindex="0" aria-label="Voir la page Vidéos d'une Influenceuse Ivoirienne">
             <div class="product-media">
               <img src="./assets/products/pastor.png" alt="Vidéos Influenceuse Ivoirienne" loading="lazy" />
               <span class="product-badge" data-i18n="products.p2_badge">Nouveau 🆕</span>
@@ -791,7 +799,8 @@
           </article>
 
           <!-- Produit 3 : KERA -->
-          <article class="product-card fade-up fade-up-d2">
+          <article class="product-card fade-up fade-up-d2" data-href="https://kera.famatchai226.workers.dev/"
+            role="link" tabindex="0" aria-label="Voir la page Pack Influenceuse KERA">
             <div class="product-media">
               <img src="./assets/products/kera.jpg" alt="Pack Influenceuse KERA" loading="lazy" />
               <span class="product-badge" data-i18n="products.p3_badge">Populaire 🔥</span>
@@ -812,7 +821,8 @@
           </article>
 
           <!-- Produit 4 : BD -->
-          <article class="product-card fade-up">
+          <article class="product-card fade-up" data-href="https://bd.famatchai226.workers.dev/"
+            role="link" tabindex="0" aria-label="Voir la page Pack +14 838 BD Hentaï PDF">
             <div class="product-media">
               <img src="./assets/products/bd.jpg" alt="Pack +14 838 BD Hentaï PDF" loading="lazy" />
               <span class="product-badge" data-i18n="products.p4_badge">Prix imbattable 💰</span>
@@ -833,7 +843,8 @@
           </article>
 
           <!-- Produit 5 : 369 Secrets -->
-          <article class="product-card fade-up fade-up-d1">
+          <article class="product-card fade-up fade-up-d1" data-href="https://369-secrets.famatchai226.workers.dev/"
+            role="link" tabindex="0" aria-label="Voir la page Les 369 Surpuissants Secrets Africains">
             <div class="product-media">
               <img src="./assets/products/secrets369.jpg" alt="Les 369 Surpuissants Secrets Africains" loading="lazy" />
               <span class="product-badge" data-i18n="products.p5_badge">-67% 🎁</span>
@@ -854,7 +865,8 @@
           </article>
 
           <!-- Produit 6 : GoTelegram -->
-          <article class="product-card fade-up fade-up-d2">
+          <article class="product-card fade-up fade-up-d2" data-href="https://gotelegram.famatchai226.workers.dev/"
+            role="link" tabindex="0" aria-label="Voir la page Créer ou Récupérer son Compte Télégram">
             <div class="product-media">
               <img src="./assets/products/gotelegram.jpg" alt="Guide Télégram" loading="lazy" />
               <span class="product-badge" data-i18n="products.p6_badge">Guide 📖</span>
@@ -1081,6 +1093,25 @@
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ===== Clickable product cards (whole surface → landing page, except "Acheter") =====
+    document.addEventListener('click', (e) => {
+      const card = e.target.closest('.product-card');
+      if (!card || !card.dataset.href) return;
+      if (e.target.closest('.btn-primary')) return; // 🛒 Acheter → checkout natif (_blank)
+      if (e.target.closest('a')) return;            // 👀 Voir la page → navigation native
+      window.location.href = card.dataset.href;
+    });
+
+    // Keyboard support: Enter / Space on a focused card
+    document.addEventListener('keydown', (e) => {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      const card = e.target.closest && e.target.closest('.product-card');
+      if (card && card.dataset.href) {
+        e.preventDefault();
+        window.location.href = card.dataset.href;
+      }
+    });
 
     // ===== Float bar show after scrolling past hero =====
     const floatBar = document.getElementById('floatBar');
