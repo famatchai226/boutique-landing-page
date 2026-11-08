@@ -30,6 +30,9 @@ boutique-landing-page/
 
 ## Produits & liens
 
+**URL déployée de la boutique** : `https://boutique-landing-page.famatchai226.workers.dev/`
+(c'est la cible de la carte « boutique complète » des pages CeceLove).
+
 | Produit | Landing (URL Cloudflare) | Prix | Checkout MyMaketou |
 |---|---|---|---|
 | Pack Baltazar | `https://balta.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/veux-tu-1385-video-289-photo-260-bd-video-baltazar-et-du-petit-baltazar-inclu/checkout` |
