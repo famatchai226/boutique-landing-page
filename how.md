@@ -16,12 +16,11 @@ boutique-landing-page/
 │   ├── fr.json         # Traductions françaises
 │   └── en.json         # Traductions anglaises
 ├── assets/
-│   ├── products/       # Visuels des 6 produits
+│   ├── products/       # Visuels des 5 produits
 │   │   ├── baltazar.jpg
 │   │   ├── pastor.png
 │   │   ├── kera.jpg
 │   │   ├── bd.jpg
-│   │   ├── secrets369.jpg
 │   │   └── gotelegram.jpg
 │   └── moyens-paiement.png
 ├── .gitignore
@@ -39,8 +38,11 @@ boutique-landing-page/
 | Influenceuse Ivoirienne | `https://pastor.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-a-des-videos-dune-influenceuse-ivoirienne-7/checkout` |
 | Pack KERA | `https://kera.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout` |
 | Pack +14 838 BD | `https://bd.famatchai226.workers.dev/` | 13 000 FCFA | `baltazar.mymaketou.shop/products/veut-tu-14838-pdf-bd-hentai-pour-homme-mature-/checkout` |
-| 369 Secrets | `https://369-secrets.famatchai226.workers.dev/` | 19 000 FCFA | `mr-livre.mymaketou.shop/products/offre-speciale-pdfaudio/checkout` |
 | Guide Télégram | `https://gotelegram.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/en/products/comment-cree-ou-recuperer-son-compte-telegram-facilement-depuis-chez-vous/checkout` |
+
+> **369 Secrets a été retiré du catalogue** : produit jugé inapproprié pour la boutique.
+> Sa landing (`https://369-secrets.famatchai226.workers.dev/`) reste en ligne, inchangée,
+> mais il n'est plus vendu ni mis en avant ici (carte produit, mosaïque, traductions).
 
 ## How to use
 
@@ -75,7 +77,7 @@ Le texte est bilingue FR/EN (détection automatique de la langue).
 
 1. **Navbar** — Logo + language toggle + CTA button
 2. **Hero** — Badge uniquement (titre, description et bouton retirés)
-3. **Catalogue** — Grille de 6 produits + badges de confiance (juste après les produits)
+3. **Catalogue** — Grille de 5 produits + badges de confiance (juste après les produits)
 4. **How it works** — 3 steps
 5. **Payment** — Payment methods image
 6. **FAQ** — Accordion-style questions
