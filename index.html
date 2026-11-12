@@ -7,12 +7,23 @@
   <title>Boutique Exclusive — Collections & Guides Premium | Accès Privé & Discret</title>
   <meta name="description"
     content="Découvrez notre boutique exclusive : vidéos privées, packs de BD adultes, livres numériques et guides. Paiement sécurisé, accès instantané et 100% discret." />
+  <link rel="canonical" href="https://boutique-landing-page.famatchai226.workers.dev/" />
+  <meta name="theme-color" content="#7c3aed" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Boutique" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Boutique Exclusive — Collections & Guides Premium | Accès Privé & Discret" />
+  <meta property="og:description" content="Découvrez notre boutique exclusive : vidéos privées, packs de BD adultes, livres numériques et guides. Paiement sécurisé, accès instantané et 100% discret." />
+  <meta property="og:url" content="https://boutique-landing-page.famatchai226.workers.dev/" />
+  <meta property="og:image" content="https://boutique-landing-page.famatchai226.workers.dev/assets/products/baltazar.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;700;800&display=swap"
     rel="stylesheet" />
 
+  <link rel="preload" as="image" href="assets/products/baltazar.webp" fetchpriority="high" />
   <style>
     /* ===================== DESIGN TOKENS ===================== */
     :root {
@@ -526,6 +537,58 @@
       border-radius: var(--radius-md);
     }
 
+    /* ===================== TESTIMONIALS ===================== */
+    .testimonials {
+      background: var(--surface-container-low);
+    }
+
+    .testimonials-head {
+      text-align: center;
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .testimonials-head .display-sm {
+      margin: 0.75rem 0 0;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .testimonial-card {
+      background: var(--surface-container-lowest);
+      border: 1px solid var(--outline-variant);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-card .stars {
+      color: var(--secondary-fixed-dim);
+      letter-spacing: 0.18em;
+      margin-bottom: 0.85rem;
+      font-size: 0.95rem;
+    }
+
+    .testimonial-card p {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--on-surface-variant);
+    }
+
+    .testimonial-card .testimonial-author {
+      margin-top: auto;
+      padding-top: 1rem;
+      font-family: var(--font-headline);
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
     /* ===================== FAQ ===================== */
     .faq-head {
       text-align: center;
@@ -693,14 +756,16 @@
     /* ===================== RESPONSIVE ===================== */
     @media (max-width: 900px) {
       .products-grid,
-      .steps-grid {
+      .steps-grid,
+      .testimonials-grid {
         grid-template-columns: repeat(2, 1fr);
       }
     }
 
     @media (max-width: 620px) {
       .products-grid,
-      .steps-grid {
+      .steps-grid,
+      .testimonials-grid {
         grid-template-columns: 1fr;
       }
 
@@ -744,7 +809,18 @@
     <section class="hero">
       <div class="container">
         <span class="hero-badge fade-up visible" data-i18n="hero.badge">🔥 Catalogue Officiel — Produits Premium</span>
-
+        <h1 class="display-lg fade-up visible" data-i18n-html="hero.title">Découvrez Nos <em>Collections</em> &amp; <em>Guides</em> Exclusifs</h1>
+        <p class="body-md fade-up visible" data-i18n-html="hero.desc">Vidéos privées, BD adultes, livres numériques et guides — livrés instantanément après paiement.</p>
+        <div class="hero-actions fade-up visible" style="margin-bottom:1rem;">
+          <a href="#catalogue" class="btn-primary" data-i18n="hero.cta">🛒 Voir les offres</a>
+        </div>
+        <div class="hero-proof" data-i18n="hero.proof" style="font-size:0.95rem; font-weight:600; opacity:0.85; margin-bottom:2rem;">⭐ +2 357 membres nous font déjà confiance</div>
+        <div class="trust-row fade-up visible">
+          <span class="trust-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> <span data-i18n="hero.trust_secure">Paiement sécurisé</span></span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z"/></svg> <span data-i18n="hero.trust_instant">Accès instantané</span></span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg> <span data-i18n="hero.trust_private">100% Discret</span></span>
+          <span class="trust-item"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg> <span data-i18n="hero.trust_members">+2 357 membres</span></span>
+        </div>
       </div>
     </section>
 
@@ -755,10 +831,10 @@
         <div class="products-grid">
 
           <!-- Produit 1 : Baltazar -->
-          <article class="product-card fade-up" data-href="https://balta.famatchai226.workers.dev/"
+          <article class="product-card fade-up" data-href="https://balta.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique"
             role="link" tabindex="0" aria-label="Voir la page Pack Baltazar">
             <div class="product-media">
-              <img src="./assets/products/baltazar.jpg" alt="Pack Baltazar" loading="lazy" />
+              <img src="./assets/products/baltazar.webp" alt="Pack Baltazar" width="900" height="976" decoding="async" loading="eager" fetchpriority="high" />
               <span class="product-badge" data-i18n="products.p1_badge">Best-seller 🔥</span>
             </div>
             <div class="product-body">
@@ -769,7 +845,7 @@
                 <span class="price-now" data-i18n="products.p1_price">5 500 FCFA</span>
               </div>
               <div class="product-actions">
-                <a href="https://balta.famatchai226.workers.dev/" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://balta.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
                 <a href="https://baltazar.mymaketou.shop/products/veux-tu-1385-video-289-photo-260-bd-video-baltazar-et-du-petit-baltazar-inclu/checkout"
                   class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
               </div>
@@ -777,10 +853,10 @@
           </article>
 
           <!-- Produit 2 : Pastor (Influenceuse Ivoirienne) -->
-          <article class="product-card fade-up fade-up-d1" data-href="https://pastor.famatchai226.workers.dev/"
+          <article class="product-card fade-up fade-up-d1" data-href="https://pastor.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique"
             role="link" tabindex="0" aria-label="Voir la page Vidéos d'une Influenceuse Ivoirienne">
             <div class="product-media">
-              <img src="./assets/products/pastor.png" alt="Vidéos Influenceuse Ivoirienne" loading="lazy" />
+              <img src="./assets/products/pastor.webp" alt="Vidéos Influenceuse Ivoirienne" loading="lazy" width="614" height="767" decoding="async" />
               <span class="product-badge" data-i18n="products.p2_badge">Nouveau 🆕</span>
             </div>
             <div class="product-body">
@@ -791,7 +867,7 @@
                 <span class="price-now" data-i18n="products.p2_price">5 500 FCFA</span>
               </div>
               <div class="product-actions">
-                <a href="https://pastor.famatchai226.workers.dev/" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://pastor.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
                 <a href="https://baltazar.mymaketou.shop/products/acces-prive-a-des-videos-dune-influenceuse-ivoirienne-7/checkout"
                   class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
               </div>
@@ -799,10 +875,10 @@
           </article>
 
           <!-- Produit 3 : KERA -->
-          <article class="product-card fade-up fade-up-d2" data-href="https://kera.famatchai226.workers.dev/"
+          <article class="product-card fade-up fade-up-d2" data-href="https://kera.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique"
             role="link" tabindex="0" aria-label="Voir la page Pack Influenceuse KERA">
             <div class="product-media">
-              <img src="./assets/products/kera.jpg" alt="Pack Influenceuse KERA" loading="lazy" />
+              <img src="./assets/products/kera.webp" alt="Pack Influenceuse KERA" loading="lazy" width="900" height="1216" decoding="async" />
               <span class="product-badge" data-i18n="products.p3_badge">Populaire 🔥</span>
             </div>
             <div class="product-body">
@@ -813,7 +889,7 @@
                 <span class="price-now" data-i18n="products.p3_price">5 500 FCFA</span>
               </div>
               <div class="product-actions">
-                <a href="https://kera.famatchai226.workers.dev/" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://kera.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
                 <a href="https://baltazar.mymaketou.shop/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout"
                   class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
               </div>
@@ -821,10 +897,10 @@
           </article>
 
           <!-- Produit 4 : BD -->
-          <article class="product-card fade-up" data-href="https://bd.famatchai226.workers.dev/"
+          <article class="product-card fade-up" data-href="https://bd.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique"
             role="link" tabindex="0" aria-label="Voir la page Pack +14 838 BD Hentaï PDF">
             <div class="product-media">
-              <img src="./assets/products/bd.jpg" alt="Pack +14 838 BD Hentaï PDF" loading="lazy" />
+              <img src="./assets/products/bd.webp" alt="Pack +14 838 BD Hentaï PDF" loading="lazy" width="896" height="1280" decoding="async" />
               <span class="product-badge" data-i18n="products.p4_badge">Prix imbattable 💰</span>
             </div>
             <div class="product-body">
@@ -835,7 +911,7 @@
                 <span class="price-now" data-i18n="products.p4_price">13 000 FCFA</span>
               </div>
               <div class="product-actions">
-                <a href="https://bd.famatchai226.workers.dev/" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://bd.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
                 <a href="https://baltazar.mymaketou.shop/products/veut-tu-14838-pdf-bd-hentai-pour-homme-mature-/checkout"
                   class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
               </div>
@@ -843,10 +919,10 @@
           </article>
 
           <!-- Produit 5 : GoTelegram -->
-          <article class="product-card fade-up fade-up-d2" data-href="https://gotelegram.famatchai226.workers.dev/"
+          <article class="product-card fade-up fade-up-d2" data-href="https://gotelegram.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique"
             role="link" tabindex="0" aria-label="Voir la page Créer ou Récupérer son Compte Télégram">
             <div class="product-media">
-              <img src="./assets/products/gotelegram.jpg" alt="Guide Télégram" loading="lazy" />
+              <img src="./assets/products/gotelegram.webp" alt="Guide Télégram" loading="lazy" width="853" height="1280" decoding="async" />
               <span class="product-badge" data-i18n="products.p6_badge">Guide 📖</span>
             </div>
             <div class="product-body">
@@ -857,7 +933,7 @@
                 <span class="price-now" data-i18n="products.p6_price">5 500 FCFA</span>
               </div>
               <div class="product-actions">
-                <a href="https://gotelegram.famatchai226.workers.dev/" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
+                <a href="https://gotelegram.famatchai226.workers.dev/?utm_source=boutique&utm_medium=catalogue&utm_campaign=catalogue_boutique" class="btn-outline" data-i18n="products.view_btn">👀 Voir la page</a>
                 <a href="https://baltazar.mymaketou.shop/en/products/comment-cree-ou-recuperer-son-compte-telegram-facilement-depuis-chez-vous/checkout"
                   class="btn-primary" target="_blank" rel="noopener" data-i18n="products.buy_btn">🛒 Acheter</a>
               </div>
@@ -933,7 +1009,35 @@
           <p class="body-md" data-i18n="payment.desc">Paiement 100% sécurisé via mobile money (Wave, Orange Money, MTN Momo, Moov Money) ou carte bancaire (Visa et MasterCard).</p>
         </div>
         <div class="payment-card fade-up">
-          <img src="./assets/moyens-paiement.png" alt="Moyens de paiement" loading="lazy" />
+          <img src="./assets/moyens-paiement.webp" alt="Moyens de paiement" loading="lazy" width="700" height="700" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials" id="avis">
+      <div class="container">
+        <div class="testimonials-head">
+          <span class="label-upper" data-i18n="testimonials.label">Avis clients</span>
+          <h2 class="display-sm" data-i18n-html="testimonials.title">Ils ont déjà commandé<br />chez nous</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card fade-up">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="testimonials.t1_text">Commande passée un samedi soir, lien reçu en deux minutes. Le pack Baltazar est immense.</p>
+            <p class="testimonial-author" data-i18n="testimonials.t1_author">Ibrahim, Dakar</p>
+          </div>
+          <div class="testimonial-card fade-up fade-up-d1">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="testimonials.t2_text">J'ai pris le pack BD : tout est en PDF propre, lisible sur mon téléphone. Rien à redire.</p>
+            <p class="testimonial-author" data-i18n="testimonials.t2_author">Yao, Abidjan</p>
+          </div>
+          <div class="testimonial-card fade-up fade-up-d2">
+            <div class="stars">★★★★★</div>
+            <p data-i18n="testimonials.t3_text">Payé par Wave, reçu par email dans la minute. Discret du début à la fin.</p>
+            <p class="testimonial-author" data-i18n="testimonials.t3_author">Serge, Cotonou</p>
+          </div>
         </div>
       </div>
     </section>
@@ -953,7 +1057,7 @@
               <span class="icon">+</span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq.a1">Après votre paiement, vous recevez automatiquement un email contenant le lien d'accès (Télégram) ou le lien de téléchargement selon le produit choisi.</p>
+              <p data-i18n="faq.a1">Un email automatique avec votre lien d'accès (Télégram) ou de téléchargement, selon le produit.</p>
             </div>
           </div>
 
@@ -973,7 +1077,7 @@
               <span class="icon">+</span>
             </button>
             <div class="faq-answer">
-              <p data-i18n="faq.a3">Absolument. Vous pouvez même utiliser un pseudonyme lors du paiement. Nous ne cherchons pas à connaître votre identité, seulement à vous livrer le contenu.</p>
+              <p data-i18n="faq.a3">Oui. Un pseudonyme suffit : nous ne cherchons pas à connaître votre identité, seulement à vous livrer.</p>
             </div>
           </div>
 
@@ -1006,7 +1110,8 @@
         <span class="label-upper" data-i18n="cta_section.label">🔥 LA PROMO EST DISPONIBLE MAINTENANT</span>
         <h2 class="display-sm" data-i18n-html="cta_section.title">Prêt à découvrir<br />nos offres exclusives ?</h2>
         <p class="subtitle" data-i18n="cta_section.subtitle">Accès instantané · Paiement sécurisé · 100% Discret</p>
-        <a href="#catalogue" class="btn-white" data-i18n="cta_section.btn">🛒 Voir toutes les offres</a>
+        <a href="#catalogue" class="btn-white" data-i18n="cta_section.btn">🛒 Voir les offres</a>
+        <div class="cta-proof" data-i18n="cta_section.proof" style="margin-top:1.25rem; font-size:0.95rem; font-weight:600; opacity:0.9;">⭐ +2 357 membres nous font déjà confiance</div>
       </div>
     </section>
 

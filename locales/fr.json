@@ -11,8 +11,9 @@
   "hero": {
     "badge": "🔥 Catalogue Officiel — Produits Premium",
     "title": "Découvrez Nos <em>Collections</em> & <em>Guides</em> Exclusifs",
-    "desc": "Contenus <strong>privés et discrets</strong> sélectionnés pour vous. Vidéos, BD adultes, livres numériques et guides — le tout livré instantanément après paiement.",
-    "cta": "🛒 Explorer la boutique",
+    "desc": "Vidéos privées, BD adultes, livres numériques et guides — livrés instantanément après paiement.",
+    "cta": "🛒 Voir les offres",
+    "proof": "⭐ +2 357 membres nous font déjà confiance",
     "trust_secure": "Paiement sécurisé",
     "trust_instant": "Accès instantané",
     "trust_private": "100% Discret",
@@ -73,15 +74,25 @@
     "title": "Moyens de paiement acceptés",
     "desc": "Paiement 100% sécurisé via mobile money (Wave, Orange Money, MTN Momo, Moov Money) ou carte bancaire (Visa et MasterCard)."
   },
+  "testimonials": {
+    "label": "Avis clients",
+    "title": "Ils ont déjà commandé<br />chez nous",
+    "t1_text": "Commande passée un samedi soir, lien reçu en deux minutes. Le pack Baltazar est immense.",
+    "t1_author": "Ibrahim, Dakar",
+    "t2_text": "J'ai pris le pack BD : tout est en PDF propre, lisible sur mon téléphone. Rien à redire.",
+    "t2_author": "Yao, Abidjan",
+    "t3_text": "Payé par Wave, reçu par email dans la minute. Discret du début à la fin.",
+    "t3_author": "Serge, Cotonou"
+  },
   "faq": {
     "label": "FAQ",
     "title": "Foire aux questions",
     "q1": "Comment vais-je recevoir mon produit ?",
-    "a1": "Après votre paiement, vous recevez automatiquement un email contenant le lien d'accès (Télégram) ou le lien de téléchargement selon le produit choisi.",
+    "a1": "Un email automatique avec votre lien d'accès (Télégram) ou de téléchargement, selon le produit.",
     "q2": "Le paiement est-il vraiment sécurisé ?",
     "a2": "Oui. Les paiements sont traités via une plateforme sécurisée. Vos informations bancaires sont chiffrées et ne sont jamais partagées.",
     "q3": "Est-ce vraiment discret ?",
-    "a3": "Absolument. Vous pouvez même utiliser un pseudonyme lors du paiement. Nous ne cherchons pas à connaître votre identité, seulement à vous livrer le contenu.",
+    "a3": "Oui. Un pseudonyme suffit : nous ne cherchons pas à connaître votre identité, seulement à vous livrer.",
     "q4": "Quand vais-je recevoir mon accès ?",
     "a4": "L'accès est instantané. Dès la confirmation du paiement, vous recevez votre lien par email en quelques secondes.",
     "q5": "Puis-je choisir entre FR et EN ?",
@@ -91,7 +102,8 @@
     "label": "🔥 LA PROMO EST DISPONIBLE MAINTENANT",
     "title": "Prêt à découvrir<br />nos offres exclusives ?",
     "subtitle": "Accès instantané · Paiement sécurisé · 100% Discret",
-    "btn": "🛒 Voir toutes les offres"
+    "btn": "🛒 Voir les offres",
+    "proof": "⭐ +2 357 membres nous font déjà confiance"
   },
   "footer": {
     "contact_intro": "Un problème ? Contactez-nous :",

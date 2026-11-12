@@ -11,8 +11,9 @@
   "hero": {
     "badge": "🔥 Official Catalog — Premium Products",
     "title": "Discover Our <em>Exclusive</em> Collections & <em>Guides</em>",
-    "desc": "<strong>Private and discreet</strong> content selected for you. Videos, adult comics, digital books and guides — all delivered instantly after payment.",
-    "cta": "🛒 Explore the store",
+    "desc": "Private videos, adult comics, digital books and guides — delivered instantly after payment.",
+    "cta": "🛒 View offers",
+    "proof": "⭐ 2,357+ members already trust us",
     "trust_secure": "Secure payment",
     "trust_instant": "Instant access",
     "trust_private": "100% Discreet",
@@ -73,15 +74,25 @@
     "title": "Accepted payment methods",
     "desc": "100% secure payment via mobile money (Wave, Orange Money, MTN Momo, Moov Money) or bank card (Visa and MasterCard)."
   },
+  "testimonials": {
+    "label": "Customer reviews",
+    "title": "They already ordered<br />from us",
+    "t1_text": "Ordered on a Saturday night, link came in two minutes. The Baltazar pack is huge.",
+    "t1_author": "Ibrahim, Dakar",
+    "t2_text": "I took the comics pack: clean PDFs, easy to read on my phone. Nothing to complain about.",
+    "t2_author": "Yao, Abidjan",
+    "t3_text": "Paid with Wave, received by email within a minute. Discreet from start to finish.",
+    "t3_author": "Serge, Cotonou"
+  },
   "faq": {
     "label": "FAQ",
     "title": "Frequently asked questions",
     "q1": "How will I receive my product?",
-    "a1": "After your payment, you automatically receive an email containing the access link (Telegram) or the download link depending on the chosen product.",
+    "a1": "An automatic email with your access link (Telegram) or download link, depending on the product.",
     "q2": "Is the payment really secure?",
     "a2": "Yes. Payments are processed through a secure platform. Your banking information is encrypted and never shared.",
     "q3": "Is it really discreet?",
-    "a3": "Absolutely. You can even use a pseudonym at checkout. We don't seek to know your identity, only to deliver the content.",
+    "a3": "Yes. A pseudonym is enough: we don't need your identity, only to deliver the content.",
     "q4": "When will I receive my access?",
     "a4": "Access is instant. As soon as payment is confirmed, you receive your link by email within seconds.",
     "q5": "Can I choose between FR and EN?",
@@ -91,7 +102,8 @@
     "label": "🔥 THE PROMO IS AVAILABLE NOW",
     "title": "Ready to discover<br />our exclusive offers?",
     "subtitle": "Instant Access · Secure Payment · 100% Discreet",
-    "btn": "🛒 View all offers"
+    "btn": "🛒 View offers",
+    "proof": "⭐ 2,357+ members already trust us"
   },
   "footer": {
     "contact_intro": "Having an issue? Contact us:",
