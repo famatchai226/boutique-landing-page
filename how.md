@@ -2,7 +2,7 @@
 
 ## Description
 
-Page vitrine centrale ("boutique") qui présente les 6 autres landing pages comme des produits. Chaque carte produit dispose de deux actions :
+Page vitrine centrale (« boutique ») qui présente les 7 produits du catalogue, chacun relié à sa landing page dédiée. Chaque carte produit dispose de deux actions :
 - **Voir la page** — URL Cloudflare vers la landing page dédiée.
 - **Acheter** — lien direct vers le checkout MyMaketou correspondant.
 
@@ -16,12 +16,14 @@ boutique-landing-page/
 │   ├── fr.json         # Traductions françaises
 │   └── en.json         # Traductions anglaises
 ├── assets/
-│   ├── products/       # Visuels des 5 produits
-│   │   ├── baltazar.jpg
-│   │   ├── pastor.png
-│   │   ├── kera.jpg
-│   │   ├── bd.jpg
-│   │   └── gotelegram.jpg
+│   ├── products/       # Visuels des 7 produits (WebP servis par index.html)
+│   │   ├── baltazar.webp
+│   │   ├── pastor.webp
+│   │   ├── kera.webp
+│   │   ├── bd.webp
+│   │   ├── cecelove.webp     # film, volet 1
+│   │   ├── cecelove2.webp    # film, volet 2
+│   │   └── gotelegram.webp
 │   └── moyens-paiement.png
 ├── .gitignore
 └── how.md              # This file
@@ -39,10 +41,15 @@ boutique-landing-page/
 | Pack KERA | `https://kera.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/products/acces-prive-et-discret-des-videos-dune-influenceuse/checkout` |
 | Pack +14 838 BD | `https://bd.famatchai226.workers.dev/` | 13 000 FCFA | `baltazar.mymaketou.shop/products/veut-tu-14838-pdf-bd-hentai-pour-homme-mature-/checkout` |
 | Guide Télégram | `https://gotelegram.famatchai226.workers.dev/` | 5 500 FCFA | `baltazar.mymaketou.shop/en/products/comment-cree-ou-recuperer-son-compte-telegram-facilement-depuis-chez-vous/checkout` |
+| CeceLove (film, volet 1) | `https://cecelove.famatchai226.workers.dev/` | 1 500 FCFA | `baltazar.mymaketou.shop/products/veux-un-film-pour-homme-mature/checkout` |
+| CeceLove 2 (film, volet 2) | `https://cecelove2.famatchai226.workers.dev/` | 3 500 FCFA | `baltazar.mymaketou.shop/products/meilleur-film-mature/checkout` |
 
 > **369 Secrets a été retiré du catalogue** : produit jugé inapproprié pour la boutique.
 > Sa landing (`https://369-secrets.famatchai226.workers.dev/`) reste en ligne, inchangée,
 > mais il n'est plus vendu ni mis en avant ici (carte produit, mosaïque, traductions).
+>
+> Les clés i18n du catalogue restent `p1`→`p4`, `p6` (guide), `p7`/`p8` (films) :
+> l'emplacement `p5`, libéré par ce retrait, n'est pas réutilisé.
 
 ## How to use
 
@@ -76,8 +83,8 @@ Le texte est bilingue FR/EN (détection automatique de la langue).
 ## Sections
 
 1. **Navbar** — Logo + language toggle + CTA button
-2. **Hero** — Badge uniquement (titre, description et bouton retirés)
-3. **Catalogue** — Grille de 5 produits + badges de confiance (juste après les produits)
+2. **Hero** — Badge, titre, description, CTA « Voir les offres », preuve sociale et badges de confiance
+3. **Catalogue** — Grille de 7 produits + badges de confiance (juste après les produits)
 4. **How it works** — 3 steps
 5. **Payment** — Payment methods image
 6. **FAQ** — Accordion-style questions
